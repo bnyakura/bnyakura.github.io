@@ -115,6 +115,10 @@ a {
     flex: 1;
 }
 
+
+.service-area__image img{
+    width:100%
+    }
 .service-area__description {
     flex: 2;
 }
