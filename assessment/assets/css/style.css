@@ -55,10 +55,11 @@ a {
 }
 
 .services__thumbnails-list {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-}
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns on large screens */
+    gap: 16px; /* Adjust gap as needed */
+  }
+
 
 .services__thumbnail {
     text-align: center;
@@ -89,6 +90,7 @@ a {
 .map__link img {
     height: 100%;
     object-fit: cover;
+    width: 100%;
 }
 
 
@@ -112,6 +114,10 @@ a {
 
 .service-area__image {
     flex: 1;
+}
+
+.service-area__image img {
+    width: 100%;
 }
 
 .service-area__description {
@@ -176,8 +182,7 @@ a {
         grid-template-columns: 1fr;
     }
 
-    .services__thumbnail-link img {
-        width: 80px;
-        height: 80px;
-    }
+  .services__thumbnails-list {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on small screens */
+  }
 }
