@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- Simple Page Needs
+================================================== -->
+<title>Brandon TheWebDev</title>
+<meta charset="UTF-8">
+<meta name="description" content="Mat - Resume & vCard HTML Template">
+<meta name="keywords" content="personal, vcard, portfolio">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<!-- Favicon
+================================================== -->  
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="css/bootstrap.css"/>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="cubeportfolio/css/cubeportfolio.min.css"/>
+<link rel="stylesheet" href="css/owl.theme.css"/> 
+<link rel="stylesheet" href="css/owl.carousel.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/colors/blue.css" id="color"/>
+
+    
+<!-- Google Web fonts
+================================================== --> 
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+
+<!-- Font Icons
+================================================== --> 
+<link rel="stylesheet" href="icon-fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="icon-fonts/medical/flaticon.css" />
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+ <!-- Preloading
+<div id="preloader">
+    <div class="spinner">
+    </div>
+</div>   -->
+    
+<!-- Wrapper --> 
+<div class="wrapper top_60 container">
+<div class="row">
+        
+<!-- Profile Section
+================================================== --> 
+<div class="col-lg-3 col-md-4">
+    <div class="profile">
+        <div class="profile-name">
+            <span class="name">Brandon Nyakura</span><br>
+            <span class="job">WordPress Developer</span>
+        </div>
+        <figure class="profile-image">
+            <img src="images/Brandon TheWebDev.jpg" alt="">
+        </figure> 
+        <ul class="profile-information">
+            <li></li>
+            <li><p><span>Name:</span>Brandon Nyakura</p></li>
+            <li><p><span>Phone:</span>+27 63 272 4197</p></li>
+            <li><p><span>Email:</span> bnyakura7@gmail.com</p></li>
+            <li><p><span>Address:</span>357 Oak Ave, Randburg, South Africa</p></li>
+        </ul>
+        <div class="col-md-12">
+            <button class="site-btn icon" id="contactBtn">Contact me <i class="fa fa-phone" aria-hidden="true"></i></button>
+            <div id="contactOptions" class="contact-options rounded" style="display: none;">
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="tel:+27632724197">Call me</a></li>
+                    <li class="list-group-item"><a href="https://wa.me/27632724197" target="_blank">Send a WhatsApp message</a></li>
+                    <li class="list-group-item"><a href="mailto:bnyakura7@gmail.com">Send an Email</a></li>
+                </ul>
+            </div>
+
+            <style>
+                .contact-options {
+                    position: relative;
+                    border-radius: 15px;
+                    background-color: white;
+                    border: 1px solid #ddd;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    z-index: 1000;
+                    margin-top: -25px;
+                    padding: 10px;
+                }
+                .contact-options .list-group-item {
+                    border: none;
+                }
+                .list-group li:hover {
+                    background-color: #0B2545;
+                    color: #fff;
+                    cursor: pointer;
+                    border-radius: 40px;
+                    a{
+                        color: #fff;
+                    }
+                }
+                .contact-options .list-group-item a {
+                    text-decoration: none;
+                    color: #333;
+                }
+                .contact-options .list-group-item a:hover {
+                    text-decoration: underline;
+                }
+                ul.list-group{
+
+                    margin-bottom: 0;
+                }
+            </style>
+
+            <script>
+                document.getElementById('contactBtn').addEventListener('mouseover', function() {
+                    document.getElementById('contactOptions').style.display = 'block';
+                });
+
+                document.getElementById('contactBtn').addEventListener('mouseout', function() {
+                    document.getElementById('contactOptions').style.display = 'none';
+                });
+
+                document.getElementById('contactOptions').addEventListener('mouseover', function() {
+                    document.getElementById('contactOptions').style.display = 'block';
+                });
+
+                document.getElementById('contactOptions').addEventListener('mouseout', function() {
+                    document.getElementById('contactOptions').style.display = 'none';
+                });
+            </script>
+        </div>
+    </div>
+</div>
+
+<!-- Page Tab Container Div -->   
+<div id="ajax-tab-container" class="col-lg-9 col-md-8 tab-container">
+    
+<!-- Header
+================================================== --> 
+<div class="row">
+    <header class="col-md-12">
+        <nav>
+            <div class="row">
+                <!-- navigation bar -->
+                <div class="col-md-6 col-sm-6 col-xs-4">
+                    <ul class="tabs">
+                        <li class="tab">
+                            <a class="home-btn" href="#home"><i class="fa fa-home" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="tab"><a href="#home">ABOUT</a></li>
+                        <li class="tab"><a href="#skills">SKILLS</a></li>
+                        <li class="tab"><a href="#portfolio">PORTFOLIO</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-8 dynamic">
+                    <button class="pull-right site-btn icon hidden-xs">Contact Me <i class="fa fa-phone" aria-hidden="true"></i></button>
+                    <div class="hamburger pull-right hidden-lg hidden-md"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                    <div class="hidden-md social-icons pull-right"> 
+                        <a class="fb" href="https://www.linkedin.com/in/brandon-nyakura-89304a158/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> 
+                        <a class="tw" href="https://wa.me/27632724197"><i class="fa fa-whatsapp" aria-hidden="true" target="_blank"></i></a> 
+                        <a class="ins" href="mailto:bnyakura7@gmail.com"><i class="fa fa-envelope" aria-hidden="true" target="_blank"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+        
+    <!-- Page Content
+    ================================================== --> 
+    <div class="col-md-12">
+        <div id="content" class="panel-container">
+          
+            <!-- Home Page
+            ================================================== -->  
+            <div id="home">
+                <!-- Text Section -->
+                <div class="row">
+                    <section class="about-me line col-md-12 padding_30 padbot_30">
+                    <div class="section-title"><span></span><h2>About Me</h2></div>
+                    <p class="top_30">Hello there! I'm Brandon, a dedicated web developer with a strong foundation in WordPress Development with five years of experience, specializing in PHP and WordPress development. 
+                        I hold a Bachelor's degree in Computer Science, which has given me a strong foundation in web development.
+                         <br>
+                         I have skills in plugin development as well as Elementor Page builder. 
+                         I take pride in developing clean and well structured websites. 
+                         When I’m not coding, you can find me exploring new recipes in the kitchen.</p>
+                </section>
+                </div>
+                <!-- My Services Section -->
+<hr>
+                <!-- Skills Section -->
+                <div class="row">
+                    <section class="design-skills col-md-12 padding_30 padbot_30" id="skills">
+                        <div class="section-title bottom_45"><span></span><h2>Skills</h2></div>
+                       <div class="row">
+                        <div class="col-md-6">
+                            <ul class="skill-list">
+                                <li> 
+                                    <h3>WordPress</h3>
+                                    <div class="progress">
+                                        <div class="percentage" style="width:95%;"></div>
+                                    </div>
+                                </li>
+                                <li> 
+                                    <h3>PHP</h3>
+                                    <div class="progress">
+                                        <div class="percentage" style="width:85%;"></div>
+                                    </div>
+                                </li>
+                                <li> 
+                                    <h3>Plugin/Theme Development</h3>
+                                    <div class="progress">
+                                        <div class="percentage" style="width:85%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="skill-list">
+                                <li> 
+                                    <h3>WooCommerce</h3>
+                                    <div class="progress">
+                                        <div class="percentage" style="width:90%;"></div>
+                                    </div>
+                                </li>
+                                <li> 
+                                    <h3>ACF Plugin</h3>
+                                    <div class="progress">
+                                        <div class="percentage" style="width:80%;"></div>
+                                    </div>
+                                </li>
+                                <li> 
+                                    <h3>Elementor Page Builder</h3>
+                                    <div class="progress">
+                                        <div class="percentage" style="width:90%;"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                       </div>
+                    </section>
+
+                </div>
+            </div>
+<hr>
+            <!-- Portfolio Page
+            ================================================== --> 
+            <div id="portfolio" class="row bottom_45">
+                <section class="col-md-12">
+                    <div class="col-md-12 content-header bottom_15">
+                        <div class="section-title top_30 bottom_30"><span></span><h2>Portfolio</h2></div>
+                    </div>
+                    <div id="grid-container" class="">
+                        <div class="row">
+                            <div class="col-lg-4 col-12 cbp-item webdesign">
+                                <figure>
+                                    <video class="elementor-video" src="https://ethwasa.co.za/wp-content/uploads/2024/10/tsoka-travel.mp4" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
+                                    <figcaption class="text-center">
+                                        <span class="title">Tsoka Travel</span><br/>
+                                        <a href="https://www.tsokatravel.com/" class="info" target="_blank">Preview</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-4 col-12 cbp-item webdesign">
+                                <figure>
+                                    <video class="elementor-video" src="https://ethwasa.co.za/wp-content/uploads/2024/10/ethwasa-web-solutions.mp4" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
+                                    <figcaption class="text-center">
+                                        <span class="title">Ethwasa Solutions</span><br/>
+                                        <a href="https://ethwasa.co.za" class="info" target="_blank">Preview</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-4 col-12 cbp-item webdesign">
+                                <figure>
+                                    <video class="elementor-video" src="https://ethwasa.co.za/wp-content/uploads/2024/10/Lucky-band-2.mp4" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
+                                    <figcaption class="text-center">
+                                        <span class="title">Lucky Brand Online</span><br/>
+                                        <a href="https://luckybrandonline.co.zw" class="info" target="_blank">Preview</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-4 col-12 cbp-item webdesign">
+                                <figure>
+                                    <video class="elementor-video" src="https://ethwasa.co.za/wp-content/uploads/2024/10/Weedram.mp4" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
+                                    <figcaption class="text-center">
+                                        <span class="title">Weedram Collective</span><br/>
+                                        <a href="https://weedramcollective.com/" class="info" target="_blank">Preview</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-4 col-12 cbp-item webdesign">
+                                <figure>
+                                    <video class="elementor-video" src="https://ethwasa.co.za/wp-content/uploads/2024/10/kunac.mp4" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
+                                    <figcaption class="text-center">
+                                        <span class="title">Kunac Systems</span><br/>
+                                        <a href="https://kunac.co.zw" class="info" target="_blank">Preview</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-lg-4 col-12 cbp-item webdesign">
+                                <figure>
+                                    <video class="elementor-video" src="https://ethwasa.co.za/wp-content/uploads/2024/10/Style-Cabins.mp4" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
+                                    <figcaption class="text-center">
+                                        <span class="title">Style Cabins</span><br/>
+                                        <a href="https://stylecabininteriors.co.zw/" class="info" target="_blank">Preview</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-4 col-12 cbp-item webdesign">
+                                <figure>
+                                    <video class="elementor-video" src="https://ethwasa.co.za/wp-content/uploads/2024/10/interlogix-mockup.mp4" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
+                                    <figcaption class="text-center">
+                                        <span class="title">Interlogix</span><br/>
+                                        <a href="https://interlogix.co.zw" class="info" target="_blank">Preview</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-4 col-12 cbp-item webdesign">
+                                <figure>
+                                    <video class="elementor-video" src="https://ethwasa.co.za/wp-content/uploads/2024/10/steel-brands.mp4" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
+                                    <figcaption class="text-center">
+                                        <span class="title">Steelbands</span><br/>
+                                        <a href="https://steelbrands.com/" class="info" target="_blank">Preview</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-4 col-12 cbp-item webdesign">
+                                <figure>
+                                    <video class="elementor-video" src="https://ethwasa.co.za/wp-content/uploads/2024/10/cyclin-zimbabwe.mp4" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
+                                    <figcaption class="text-center">
+                                        <span class="title">Cycling Zimbabwe</span><br/>
+                                        <a href="https://cyclingzimbabwe.org/" class="info" target="_blank">Preview</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-4 col-12 cbp-item webdesign">
+                                <figure>
+                                    <video class="elementor-video" src="https://ethwasa.co.za/wp-content/uploads/2024/10/yourbookng.mp4" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
+                                    <figcaption class="text-center">
+                                        <span class="title">Yourbookng</span><br/>
+                                        <a href="https://yourbookng.com/" class="info" target="_blank">Preview</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-lg-4 col-12 cbp-item webdesign">
+                                <figure>
+                                    <video class="elementor-video" src="https://ethwasa.co.za/wp-content/uploads/2024/10/powershop.mp4" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload"></video>
+                                    <figcaption class="text-center">
+                                        <span class="title">Powershop</span><br/>
+                                        <a href="https://powershop.co.zw/" class="info" target="_blank">Preview</a>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>  
+        </div><!-- Content - End -->
+     </div> <!-- col-md-12 end -->
+</div><!-- row end -->
+<!-- Footer
+================================================== --> 
+<footer>
+    <div class="footer col-md-12 top_30 bottom_30">
+        <div class="name col-md-4 hidden-md hidden-sm hidden-xs">Brandon TheWebDev</div>
+        <div class="copyright col-lg-8 col-md-12">© <script>document.write(new Date().getFullYear());</script> All rights reserved.</div>  
+    </div>
+</footer>
+    
+</div> <!-- Tab Container - End -->
+</div> <!-- Row - End --> 
+</div> <!-- Wrapper - End -->   
+
+<!-- Javascripts
+================================================== -->  
+<script src="js/jquery-2.1.4.min.js"></script> 
+<script src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+<script src="js/bootstrap.min.js"></script> 
+<!-- <script src="js/jquery.easytabs.min.js"></script> -->
+<script src="js/owl.carousel.min.js"></script> 
+<script src="js/main.js"></script>
+<!-- for color alternatives -->
+<script src="js/jquery.cookie-1.4.1.min.js"></script>
+
+</body>
+</html>
